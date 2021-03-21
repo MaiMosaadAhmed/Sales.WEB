@@ -1,0 +1,58 @@
+/* here you can put your own css to customize and override the theme */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+body {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.page-logo {
+    margin-top: -10px;
+}
+
+.nav-link,
+.mega-menu-submenu a {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.social-icons li {
+    float: none;
+    display: inline-block;
+}
+
+.page-prefooter {
+    padding: 1rem;
+    text-transform: lowercase !important;
+}
+
+    .page-prefooter .row {
+        justify-content: center;
+        align-content: center;
+    }
+
+        .page-prefooter .row div {
+            margin: 0px auto;
+        }
+
+    .page-prefooter h2 {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        text-transform: lowercase !important;
+        font-family: 'Tajawal', sans-serif !important;
+        font-size: 1.2rem !important;
+    }
+
+    .page-prefooter small {
+        color: #eeeeee;
+        font-size: 1.2rem !important;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-transform: lowercase !important;
+        font-family: 'Tajawal', sans-serif !important;
+    }
+
+    .page-prefooter .logo-default {
+        margin: 0px;
+        padding: 0px;
+        height: 25px;
+    }
