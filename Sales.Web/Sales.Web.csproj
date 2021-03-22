@@ -434,6 +434,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Employee\Controllers\EmployeeController.cs" />
     <Compile Include="Areas\Employee\EmployeeAreaRegistration.cs" />
+    <Compile Include="Areas\Employee\Models\Employee.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -5051,7 +5052,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Employee\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -5065,6 +5065,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Areas\Employee\Views\web.config" />
     <Content Include="Areas\Employee\Views\Employee\Index.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\CreateEmployee.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />
     <Content Include="Views\Shared\_ErrorLayout.cshtml" />

@@ -9,9 +9,26 @@ body {
     margin-top: -10px;
 }
 
-.nav-link,
-.mega-menu-submenu a {
+.page-title h1 {
     font-family: 'Tajawal', sans-serif !important;
+}
+
+.dropdown-menu {
+    box-shadow: -5px 5px 15px #ddd !important;
+}
+
+.nav-link,
+.mega-menu-submenu a,
+.mega-menu-content h3 {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.mega-menu-content h3 {
+    color: #fff !important;
+    padding:1rem 0.8rem !important;
+    border-radius:5px;
+    min-width:150px!important;
+    text-align:center;
 }
 
 .social-icons li {
@@ -24,40 +41,40 @@ body {
     text-transform: lowercase !important;
 }
 
-    .page-prefooter .row {
-        justify-content: center;
-        align-content: center;
+.page-prefooter .row {
+    justify-content: center;
+    align-content: center;
+}
+
+    .page-prefooter .row div {
+        margin: 0px auto;
     }
 
-        .page-prefooter .row div {
-            margin: 0px auto;
-        }
+.page-prefooter h2 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    text-transform: lowercase !important;
+    font-family: 'Tajawal', sans-serif !important;
+    font-size: 1.2rem !important;
+}
 
-    .page-prefooter h2 {
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-        text-transform: lowercase !important;
-        font-family: 'Tajawal', sans-serif !important;
-        font-size: 1.2rem !important;
-    }
+.page-prefooter small {
+    color: #eeeeee;
+    font-size: 1.2rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-transform: lowercase !important;
+    font-family: 'Tajawal', sans-serif !important;
+}
 
-    .page-prefooter small {
-        color: #eeeeee;
-        font-size: 1.2rem !important;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        text-transform: lowercase !important;
-        font-family: 'Tajawal', sans-serif !important;
-    }
+.page-prefooter .logo-default {
+    margin: 0px;
+    padding: 0px;
+    height: 25px;
+}
 
-    .page-prefooter .logo-default {
-        margin: 0px;
-        padding: 0px;
-        height: 25px;
-    }
-
-    .portlet-title #add {
-        margin: 5px 15px;
-        position: relative;
-    }
+.portlet-title #add {
+    margin: 5px 15px;
+    position: relative;
+}

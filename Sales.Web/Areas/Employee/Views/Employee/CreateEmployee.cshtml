@@ -1,0 +1,8 @@
+﻿@model Sales.Web.Areas.Employee.Models.Employee
+
+@{
+    ViewBag.Title = "CreateEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.EditorFor(m => m.ID, )
+<input name="@Model.ID"/>

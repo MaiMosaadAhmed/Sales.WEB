@@ -49,7 +49,7 @@
                         <div class="container-fluid">
                             <!-- BEGIN LOGO -->
                             <div class="page-logo">
-                                <a href="index.html">
+                                <a href="/Home/Index">
                                     <img src="~/assets/img/aligntech.png" alt="logo" class="logo-default" />
                                 </a>
                             </div>
@@ -254,61 +254,38 @@
                             <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
                             <div class="hor-menu  hor-menu-light">
                                 <ul class="nav navbar-nav">
+
                                     <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown active">
-                                        <a href="index.html">
+                                        <a href="/Home/Index">
                                             الرئيسية
                                             <span class="arrow"></span>
                                         </a>
                                     </li>
-                                    <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown  py-5">
+
+                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
                                         <a href="javascript:;">
-                                            إدارة المخازن
+                                            إدارة العاملين
                                             <span class="arrow"></span>
                                         </a>
-                                        <ul class="dropdown-menu" style="min-width: 710px">
-                                            <li>
-                                                <div class="mega-menu-content">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <ul class="mega-menu-submenu">
-                                                                <li>
-                                                                    <a href="ui_colors.html">بيانات المخازن</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="ui_metronic_grid.html">إدارة الاصناف</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="ui_general.html">مجموعات الأصناف</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="ui_buttons.html">الوحدات</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="ui_buttons_spinner.html">تنسيب الوحدات</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <ul class="mega-menu-submenu">
-                                                                <li>
-                                                                    <a href="maps_vector.html">رصيد المخازن</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="ui_timeline.html">طلبات التحميل</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="ui_timeline_2.html">رصيد السيارة الحالي</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li aria-haspopup="true" class=" ">
+                                                <a href="/Employee/Employee/Index" class="nav-link  ">بيانات العاملين</a>
+                                            </li>
+                                            <li aria-haspopup="true" class=" ">
+                                                <a href="#" class="nav-link  ">الوظائف</a>
+                                            </li>
+                                            <li aria-haspopup="true" class=" ">
+                                                <a href="#" class="nav-link  ">متابعة المندوب الان</a>
+                                            </li>
+                                            <li aria-haspopup="true" class=" ">
+                                                <a href="#" class="nav-link  ">خط سير المندوب</a>
                                             </li>
                                         </ul>
                                     </li>
+
                                     <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
                                         <a href="javascript:;">
-                                            العملاء
+                                            إدارة العملاء
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu pull-left">
@@ -332,6 +309,63 @@
                                             </li>
                                         </ul>
                                     </li>
+
+                                    <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown">
+                                        <a href="javascript:;">
+                                            إدارة المخازن
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">المخازن</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">بيانات المخازن</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">رصيد المخازن</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">طلبات التحميل</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">رصيد السيارة الحالي</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">الاصناف</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">إدارة الاصناف</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">مجموعات الأصناف</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">الوحدات</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">تنسيب الوحدات</a>
+                                                                </li>
+                                                                <li aria-haspopup="true" class=" ">
+                                                                    <a href="layout_top_bar_fixed.html" class="nav-link  ">تسعير الاصناف</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
                                     <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown">
                                         <a href="javascript:;">
                                             إدارة المبيعات
@@ -345,487 +379,151 @@
                                                 <a href="layout_top_bar_light.html" class="nav-link  ">العروض</a>
                                             </li>
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="layout_fluid_page.html" class="nav-link  ">بيع مباشر</a>
-                                            </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_top_bar_fixed.html" class="nav-link  ">تسعير الاصناف</a>
-                                            </li>
-                                            <li aria-haspopup="true" class=" ">
                                                 <a href="layout_mega_menu_fixed.html" class="nav-link  ">المستهدفات</a>
+                                            </li>
+                                            <li aria-haspopup="true" class=" ">
+                                                <a href="layout_fluid_page.html" class="nav-link  ">بيع مباشر</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+
+                                    <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown">
                                         <a href="javascript:;">
                                             التقارير
                                             <span class="arrow"></span>
                                         </a>
-                                        <ul class="dropdown-menu pull-left">
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-settings"></i> Form Stuff
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_controls.html" class="nav-link ">
-                                                            Bootstrap Form
-                                                            <br>Controls
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_controls_md.html" class="nav-link ">
-                                                            Material Design
-                                                            <br>Form Controls
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_validation.html" class="nav-link "> Form Validation </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_validation_states_md.html" class="nav-link ">
-                                                            Material Design
-                                                            <br>Form Validation States
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_validation_md.html" class="nav-link ">
-                                                            Material Design
-                                                            <br>Form Validation
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_layouts.html" class="nav-link "> Form Layouts </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_repeater.html" class="nav-link "> Form Repeater </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_input_mask.html" class="nav-link "> Form Input Mask </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_editable.html" class="nav-link "> Form X-editable </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_wizard.html" class="nav-link "> Form Wizard </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_icheck.html" class="nav-link "> iCheck Controls </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_image_crop.html" class="nav-link "> Image Cropping </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_fileupload.html" class="nav-link "> Multiple File Upload </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="form_dropzone.html" class="nav-link "> Dropzone File Upload </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-briefcase"></i> Tables
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="table_static_basic.html" class="nav-link "> Basic Tables </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="table_static_responsive.html" class="nav-link "> Responsive Tables </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="table_bootstrap.html" class="nav-link "> Bootstrap Tables </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            Datatables
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="table_datatables_managed.html" class="nav-link "> Managed Datatables </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_buttons.html" class="nav-link "> Buttons Extension </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_colreorder.html" class="nav-link "> Colreorder Extension </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_rowreorder.html" class="nav-link "> Rowreorder Extension </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_scroller.html" class="nav-link "> Scroller Extension </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_fixedheader.html" class="nav-link ">
-                                                                    FixedHeader Extension
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_responsive.html" class="nav-link "> Responsive Extension </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_editable.html" class="nav-link "> Editable Datatables </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="table_datatables_ajax.html" class="nav-link "> Ajax Datatables </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="?p=" class="nav-link nav-toggle ">
-                                                    <i class="icon-wallet"></i> Portlets
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="portlet_boxed.html" class="nav-link "> Boxed Portlets </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="portlet_light.html" class="nav-link "> Light Portlets </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="portlet_solid.html" class="nav-link "> Solid Portlets </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="portlet_ajax.html" class="nav-link "> Ajax Portlets </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="portlet_draggable.html" class="nav-link "> Draggable Portlets </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="?p=" class="nav-link nav-toggle ">
-                                                    <i class="icon-settings"></i> Elements
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="elements_steps.html" class="nav-link "> Steps </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="elements_lists.html" class="nav-link "> Lists </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="elements_ribbons.html" class="nav-link "> Ribbons </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="elements_overlay.html" class="nav-link "> Overlays </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="elements_cards.html" class="nav-link "> User Cards </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-bar-chart"></i> Charts
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="charts_amcharts.html" class="nav-link "> amChart </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="charts_flotcharts.html" class="nav-link "> Flot Charts </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="charts_flowchart.html" class="nav-link "> Flow Charts </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="charts_google.html" class="nav-link "> Google Charts </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="charts_echarts.html" class="nav-link "> eCharts </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="charts_morris.html" class="nav-link "> Morris Charts </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            HighCharts
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="charts_highcharts.html" class="nav-link " target="_blank"> HighCharts </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="charts_highstock.html" class="nav-link " target="_blank"> HighStock </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="charts_highmaps.html" class="nav-link " target="_blank"> HighMaps </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">تقارير المندوبين</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">الزيارات</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">الزيارات الفائته</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">الزيارات اليومية للمندوب</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">تقييم اداء المندوبين</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">تقييم اداء مندوب</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">مديونيات المندوبين</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">أوامر التوريد اليومي</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">تقارير المبيعات</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">الفواتير</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">المبيعات</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">مبيعات المندوبين اليومي</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">تقارير العملاء</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">العملاء الجدد</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">تحليل العملاء</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">تقارير الاصناف</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">تحليل الاصناف</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">مبيعات الاصناف</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">مستهدفات الاصناف للمندوب</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+
+                                    <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown">
                                         <a href="javascript:;">
-                                            <!-- <i class="icon-briefcase"></i> -->
-                                            اللإعدادات
+                                            الإعدادات
                                             <span class="arrow"></span>
                                         </a>
-                                        <ul class="dropdown-menu pull-left">
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-basket"></i> eCommerce
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="ecommerce_index.html" class="nav-link ">
-                                                            <i class="icon-home"></i> Dashboard
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="ecommerce_orders.html" class="nav-link ">
-                                                            <i class="icon-basket"></i> Orders
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="ecommerce_orders_view.html" class="nav-link ">
-                                                            <i class="icon-tag"></i> Order View
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="ecommerce_products.html" class="nav-link ">
-                                                            <i class="icon-graph"></i> Products
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="ecommerce_products_edit.html" class="nav-link ">
-                                                            <i class="icon-graph"></i> Product Edit
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-docs"></i> Apps
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="app_todo.html" class="nav-link ">
-                                                            <i class="icon-clock"></i> Todo 1
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="app_todo_2.html" class="nav-link ">
-                                                            <i class="icon-check"></i> Todo 2
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="app_inbox.html" class="nav-link ">
-                                                            <i class="icon-envelope"></i> Inbox
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="app_calendar.html" class="nav-link ">
-                                                            <i class="icon-calendar"></i> Calendar
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="app_ticket.html" class="nav-link ">
-                                                            <i class="icon-notebook"></i> Support
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-user"></i> User
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_user_profile_1.html" class="nav-link ">
-                                                            <i class="icon-user"></i> Profile 1
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_user_profile_1_account.html" class="nav-link ">
-                                                            <i class="icon-user-female"></i> Profile 1 Account
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_user_profile_1_help.html" class="nav-link ">
-                                                            <i class="icon-user-following"></i> Profile 1 Help
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_user_profile_2.html" class="nav-link ">
-                                                            <i class="icon-users"></i> Profile 2
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            <i class="icon-notebook"></i> Login
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="page_user_login_1.html" class="nav-link " target="_blank"> Login Page 1 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_2.html" class="nav-link " target="_blank"> Login Page 2 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_3.html" class="nav-link " target="_blank"> Login Page 3 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_4.html" class="nav-link " target="_blank"> Login Page 4 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_5.html" class="nav-link " target="_blank"> Login Page 5 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_6.html" class="nav-link " target="_blank"> Login Page 6 </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_user_lock_1.html" class="nav-link " target="_blank">
-                                                            <i class="icon-lock"></i> Lock Screen 1
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_user_lock_2.html" class="nav-link " target="_blank">
-                                                            <i class="icon-lock-open"></i> Lock Screen 2
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-social-dribbble"></i> General
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_about.html" class="nav-link ">
-                                                            <i class="icon-info"></i> About
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_contact.html" class="nav-link ">
-                                                            <i class="icon-call-end"></i> Contact
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            <i class="icon-notebook"></i> Portfolio
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_1.html" class="nav-link "> Portfolio 1 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_2.html" class="nav-link "> Portfolio 2 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_3.html" class="nav-link "> Portfolio 3 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_4.html" class="nav-link "> Portfolio 4 </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li aria-haspopup="true" class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            <i class="icon-magnifier"></i> Search
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="page_general_search.html" class="nav-link "> Search 1 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_2.html" class="nav-link "> Search 2 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_3.html" class="nav-link "> Search 3 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_4.html" class="nav-link "> Search 4 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_5.html" class="nav-link "> Search 5 </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_pricing.html" class="nav-link ">
-                                                            <i class="icon-tag"></i> Pricing
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_pricing_2.html" class="nav-link ">
-                                                            <i class="icon-tag"></i> Pricing 2
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_faq.html" class="nav-link ">
-                                                            <i class="icon-wrench"></i> FAQ
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_blog.html" class="nav-link ">
-                                                            <i class="icon-pencil"></i> Blog
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_blog_post.html" class="nav-link ">
-                                                            <i class="icon-note"></i> Blog Post
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_invoice.html" class="nav-link ">
-                                                            <i class="icon-envelope"></i> Invoice
-                                                        </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_general_invoice_2.html" class="nav-link ">
-                                                            <i class="icon-envelope"></i> Invoice 2
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li aria-haspopup="true" class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-settings"></i> System
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_system_coming_soon.html" class="nav-link " target="_blank"> Coming Soon </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_system_404_1.html" class="nav-link "> 404 Page 1 </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_system_404_2.html" class="nav-link " target="_blank"> 404 Page 2 </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_system_404_3.html" class="nav-link " target="_blank"> 404 Page 3 </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_system_500_1.html" class="nav-link "> 500 Page 1 </a>
-                                                    </li>
-                                                    <li aria-haspopup="true" class=" ">
-                                                        <a href="page_system_500_2.html" class="nav-link " target="_blank"> 500 Page 2 </a>
-                                                    </li>
-                                                </ul>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">إعدادات المناطق</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">المحافظات</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">المناطق</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">خطوط السير</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <ul class="mega-menu-submenu">
+                                                                <li>
+                                                                    <h3 class="bg-primary">إعدادات عامة</h3>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">بيانات الشركة</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">بيانات السيارات</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">مجموعات المستخدمين</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">صلاحيات المستخدمين</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">أسباب المرتجع</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
@@ -868,7 +566,7 @@
 
                         <div class="col-md-4 col-sm-6">
                             <a href="index.html">
-                                <img src="../assets/layouts/layout3/img/aligntech.png" alt="logo" class="logo-default">
+                                <img src="~/assets/img/aligntech.png" alt="logo" class="logo-default" />
                             </a>
                         </div>
                     </div>
