@@ -3,39 +3,107 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<!-- BEGIN PAGE HEAD-->
 <div class="page-head">
     <div class="container-fluid">
+        <!-- BEGIN PAGE TITLE -->
         <div class="page-title">
-            <h1>
-                Employees
-                <small>show data & edit</small>
-            </h1>
+            <h1>إدارة العاملين</h1>
         </div>
-        <ul class="page-breadcrumb breadcrumb text-right">
+        <!-- END PAGE TITLE -->
+    </div>
+</div>
+<!-- END PAGE HEAD-->
+<!-- BEGIN PAGE CONTENT BODY -->
+<div class="page-content">
+    <div class="container-fluid">
+        <!-- BEGIN PAGE BREADCRUMBS -->
+        <ul class="page-breadcrumb breadcrumb">
             <li>
-                <a href="index.html">Dashboard </a>
+                <a href="index.html">إدارةالعاملين</a>
                 <i class="fa fa-circle"></i>
             </li>
             <li>
-                <span>Employee</span>
+                <span>الرئيسية</span>
             </li>
         </ul>
-    </div>
-</div>
-<div class="page-content">
-    <div class="container-fluid">
+        <!-- END PAGE BREADCRUMBS -->
+        <!-- BEGIN PAGE CONTENT INNER -->
         <div class="page-content-inner">
-            <div class="mt-content-body">
-
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption font-blue">
+                                <i class="icon-users font-blue"></i>
+                                <span class="caption-subject bold uppercase">جدول العاملين</span>
+                            </div>
+                            <div class="tools"> </div>
+                            <div>
+                                <button id="add" type="button" class="btn green-meadow sbold btn-outline">
+                                    <i class="fa fa-user-plus"> </i> إضافة جديدة
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>فعال</th>
+                                        <th>كود</th>
+                                        <th>إسم</th>
+                                        <th>وظيفة</th>
+                                        <th>طريقة البيع</th>
+                                        <th>صلاحيات</th>
+                                        <th>إعدادات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="/assets/layouts/layout3/img/avatar10.jpg" class="rounded" alt="">
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="btn green-meadow">Active</p>
+                                        </td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                        <td>$320,800</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                            <button class="btn red"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="/assets/layouts/layout3/img/avatar10.jpg" class="rounded" alt="">
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="btn red">Not Active</p>
+                                        </td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                        <td>$170,750</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                            <button class="btn red"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-
+                    <!-- END EXAMPLE TABLE PORTLET-->
                 </div>
             </div>
         </div>
+        <!-- END PAGE CONTENT INNER -->
     </div>
 </div>
-
-
+<!-- END PAGE CONTENT BODY -->

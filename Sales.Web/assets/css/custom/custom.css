@@ -56,3 +56,8 @@ body {
         padding: 0px;
         height: 25px;
     }
+
+    .portlet-title #add {
+        margin: 5px 15px;
+        position: relative;
+    }
