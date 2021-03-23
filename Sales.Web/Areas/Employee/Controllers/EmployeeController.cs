@@ -13,5 +13,10 @@ namespace Sales.Web.Areas.Employee.Controllers
         {
             return View();
         }
+
+        public ActionResult CreateEmployee(int? id)
+        {
+            return View();
+        }
     }
 }
