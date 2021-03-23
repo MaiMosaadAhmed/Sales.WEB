@@ -4672,6 +4672,7 @@
     <Content Include="assets\scripts\layout\demo.min.js" />
     <Content Include="assets\scripts\layout\layout.js" />
     <Content Include="assets\scripts\layout\layout.min.js" />
+    <Content Include="assets\scripts\pages\common.js" />
     <Content Include="assets\scripts\pages\dashboard.js" />
     <Content Include="assets\scripts\pages\dashboard.min.js" />
     <Content Include="assets\scripts\pages\EmployeePage.js" />
