@@ -78,3 +78,68 @@ body {
     margin: 5px 15px;
     position: relative;
 }
+
+
+#createEmployeeForm {
+    margin: 0 1rem;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.6s ease;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #fff;
+    color: #337ab7;
+    position: absolute;
+    padding: 15px;
+    top: -200%;
+    right: 100%;
+    box-shadow: 1px 1px 5px #ccc;
+    border: solid 1px #337ab7;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 10px;
+    visibility: hidden;
+    font-weight: 700;
+    min-width: 200px;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif !important;
+    transition: all 0.6s ease;
+}
+
+[data-title] {
+    position: relative;
+    margin: 0 1rem;
+    color: #337ab7;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+#formAddEmployeeActions button {
+    padding: 0.8rem 3rem;
+    margin-left: 1rem;
+}
+
+#salesManData {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+    #salesManData h3 {
+        font-family: 'Tajawal', sans-serif !important;
+        color: #337ab7;
+        margin: 1.5rem 0;
+        border: 1px solid #f0ad4e;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+    #salesManData .hide {
+        opacity: 0;
+        transition: all 1s ease;
+    }
