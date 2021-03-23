@@ -434,6 +434,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Employee\Controllers\EmployeeController.cs" />
     <Compile Include="Areas\Employee\EmployeeAreaRegistration.cs" />
+    <Compile Include="Areas\Employee\Models\Employee.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -4673,9 +4674,13 @@
     <Content Include="assets\scripts\layout\layout.js" />
     <Content Include="assets\scripts\layout\layout.min.js" />
     <Content Include="assets\scripts\pages\common.js" />
+    <Content Include="assets\scripts\pages\components-date-time-pickers.min.js" />
+    <Content Include="assets\scripts\pages\CreateNewEmployee.js" />
     <Content Include="assets\scripts\pages\dashboard.js" />
     <Content Include="assets\scripts\pages\dashboard.min.js" />
     <Content Include="assets\scripts\pages\EmployeePage.js" />
+    <Content Include="assets\scripts\pages\form-icheck.min.js" />
+    <Content Include="assets\scripts\pages\form-validation.js" />
     <Content Include="assets\scripts\pages\login-4.js" />
     <Content Include="assets\scripts\pages\login-4.min.js" />
     <Content Include="assets\scripts\pages\login-5.js" />
@@ -5052,7 +5057,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Employee\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -5066,6 +5070,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Areas\Employee\Views\web.config" />
     <Content Include="Areas\Employee\Views\Employee\Index.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\CreateEmployee.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />
     <Content Include="Views\Shared\_ErrorLayout.cshtml" />

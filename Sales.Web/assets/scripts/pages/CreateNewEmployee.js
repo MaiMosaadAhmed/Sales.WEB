@@ -19,9 +19,3 @@
     });
 
 });
-
-$('[data-toggle="tooltip"]').tooltip();
-
-function showTooltip() {
-    $('#hello').tooltip('show');
-};
