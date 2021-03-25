@@ -8,8 +8,8 @@ namespace Sales.Web
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-            //            "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/assets/plugins/jquery.min.js"));
 
             //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
             //            "~/Scripts/jquery.validate*"));
@@ -19,12 +19,25 @@ namespace Sales.Web
             //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
             //            "~/Scripts/modernizr-*"));
 
-            //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-            //          "~/Scripts/bootstrap.js"));
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/assets/plugins/bootstrap/js/bootstrap.min.js",
+                      "~/assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"
+                      ));
 
-            //bundles.Add(new StyleBundle("~/Content/css").Include(
-            //          "~/Content/bootstrap.css",
-            //          "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/bundles/datatable").Include(
+                      "~/assets/plugins/datatables/datatable.js",
+                      "~/assets/plugins/datatables/datatables.min.js",
+                      "~/assets/plugins/datatables/table-datatables-buttons.js",
+                      "~/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"
+                      ));
+
+            bundles.Add(new StyleBundle("~/assets/datatable.css").Include(
+                      "~/assets/plugins/datatables/datatables.min.css",
+                      "~/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap-rtl.css"));
+
+            bundles.Add(new StyleBundle("~/assets/bootstrap.css").Include(
+                      "~/assets/plugins/bootstrap/css/bootstrap-rtl.min.css",
+                      "~/assets/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css"));
         }
     }
 }

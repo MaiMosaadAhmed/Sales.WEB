@@ -43,22 +43,22 @@
                         <!-- <div class="container"> -->
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label class="control-label">
-                                        نوع الموظف
-                                        <span class="required"> * </span>
-                                        <div class="icheck-inline margin-top-15">
-                                            <label>
-                                                <input type="radio" name="radio2" id="salesMan" class="icheck"
-                                                       data-radio="iradio_square-blue">
-                                                مندوب
-                                            </label>
-                                            <label>
-                                                <input type="radio" name="radio2" id="employee" class="icheck"
-                                                       data-radio="iradio_square-blue">
-                                                موظف إداري
-                                            </label>
-                                        </div>
+                                <div class="form-group" >
+                                    <label class="control-label"></label>
+                                    نوع الموظف
+                                    <span class="required"> * </span>
+                                    <div class="icheck-inline margin-top-15" >
+                                        <label>
+                                            <input type="radio" name="radio2" id="salesMan" class="icheck"
+                                                   data-radio="iradio_square-blue" >
+                                            مندوب
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio2" id="employee" class="icheck"
+                                                   data-radio="iradio_square-blue" checked>
+                                            موظف إداري
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
@@ -82,7 +82,7 @@
                                     <div class="input-icon right">
                                         <i class="fa"></i>
                                         <input type="text" data-required="1" value="" class="form-control input-medium"
-                                               name="empName" />
+                                               name="empName" required />
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@
                                     <div class="input-icon right">
                                         <i class="fa"></i>
                                         <input type="number" name="empCode" data-required="1" value=""
-                                               class="form-control input-medium" />
+                                               class="form-control input-medium" required />
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                     </label>
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="tel" value="" name="empMobile" class="form-control input-medium" />
+                                        <input type="tel" value="" name="empMobile" class="form-control input-medium" required/>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                                     <label class="control-label">العنوان</label>
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="text" value="" name="empAddress" class="form-control input-medium" />
+                                        <input type="text" value="" name="empAddress" class="form-control input-medium" required/>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                     <label class="control-label">الرقم القومي</label>
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="text" value="" name="empNID" class="form-control input-medium" />
+                                        <input type="text" value="" name="empNID" class="form-control input-medium" required/>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                                 <div class="form-group">
                                     <label class="control-label">تاريخ الميلاد</label>
                                     <div class="input-icon right">
-                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" />
+                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" required/>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
                                 <div class="form-group">
                                     <label class="control-label">تاريخ التعيين</label>
                                     <div class="input-icon right">
-                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" />
+                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" required/>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="single" class="control-label">الوظيفة</label>
-                                    <select id="single" class="form-control select2  input-medium" name="empJob">
+                                    <select id="single" class="form-control select2  input-medium" name="empJob" required>
                                         <option></option>
                                         <option value="job1">وظيفة 1</option>
                                         <option value="job2">وظيفة 2</option>
@@ -185,7 +185,7 @@
                                         </label>
                                         <div class="input-icon right">
                                             <i class="fa"></i>
-                                            <input type="text" class="form-control input-medium" />
+                                            <input type="number" class="form-control input-medium" min="0"/>
                                         </div>
                                     </div>
                                 </div>
@@ -289,6 +289,10 @@
     </div>
 </div>
 <!-- END PAGE CONTENT BODY -->
-<script src="~/assets/plugins/jquery.min.js"></script>
-<script src="~/assets/scripts/pages/CreateNewEmployee.js"></script>
+@section Scripts{
+    <script src="~/assets/scripts/pages/form-validation.min.js"></script>
+    <script src="~/assets/scripts/pages/components-date-time-pickers.min.js"></script>
+    <script src="~/assets/scripts/pages/CreateNewEmployee.js"></script>
+}
+
 

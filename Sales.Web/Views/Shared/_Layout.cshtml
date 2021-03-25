@@ -9,17 +9,9 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="~/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
-    <link href="~/assets/plugins/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" />
-    <link href="~/assets/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css" rel="stylesheet" />
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <link href="~/assets/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" />
-    <link href="~/assets/plugins/morris/morris.css" rel="stylesheet" />
-    <link href="~/assets/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" />
-    <link href="~/assets/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" />
-    <!--Datatable-->
-    <link href="~/assets/plugins/datatables/datatables.min.css" rel="stylesheet" />
-    <link href="~/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap-rtl.css" rel="stylesheet" />
+
+    @Styles.Render("~/assets/bootstrap.css")
+    @Styles.Render("~/assets/datatable.css")
 
     <!--New For create employee-->
     <link href="~/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
@@ -27,19 +19,21 @@
 
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL STYLES -->
-    <link href="~/assets/css/global/components-rounded-rtl.min.css" rel="stylesheet" />
-    <link href="~/assets/css/global/plugins-rtl.min.css" rel="stylesheet" />
+    
+    <link href="~/assets/css/global/components-rounded-rtl.css" rel="stylesheet" />
+    <link href="~/assets/css/global/plugins-rtl.css" rel="stylesheet" />
     <!-- END THEME GLOBAL STYLES -->
     <!-- BEGIN THEME LAYOUT STYLES -->
-    <link href="~/assets/css/layout/layout-rtl.min.css" rel="stylesheet" />
+    <link href="~/assets/css/layout/layout-rtl.css" rel="stylesheet" />
     <link href="~/assets/css/themes/default-rtl.min.css" rel="stylesheet" />
     <link href="~/assets/css/custom/custom.css" rel="stylesheet" />
+
 
     @*@Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")*@
 </head>
-<!-- END HEAD -->
 
+<!-- END HEAD -->
 <body class="page-container-bg-solid page-header-menu-fixed">
     <div class="page-wrapper">
         <div class="page-wrapper-row">
@@ -307,7 +301,7 @@
                                                 <a href="layout_mega_menu_fixed.html" class="nav-link  ">تسويات العملاء</a>
                                             </li>
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="layout_disabled_menu.html" class="nav-link  ">مواقع العملاء</a>
+                                                <a href="/Employee/Employee/EmployeeLocations" class="nav-link  ">مواقع العملاء</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -579,31 +573,15 @@
         </footer>
     </div>
     <!-- BEGIN CORE PLUGINS -->
-    <script src="~/assets/plugins/jquery.min.js"></script>
-    <script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="~/assets/plugins/js.cookie.min.js"></script>
-    <script src="~/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="~/assets/plugins/jquery.blockui.min.js"></script>
-    <script src="~/assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/datatable")
     <!-- END CORE PLUGINS -->
+
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="~/assets/plugins/moment.min.js"></script>
     <script src="~/assets/plugins/bootstrap-daterangepicker/daterangepicker.min.js"></script>
-    <script src="~/assets/plugins/morris/morris.min.js"></script>
-    <script src="~/assets/plugins/morris/raphael-min.js"></script>
 
-    <script src="~/assets/plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="~/assets/plugins/counterup/jquery.counterup.min.js"></script>
-    <script src="~/assets/plugins/fullcalendar/fullcalendar.min.js"></script>
-    <script src="~/assets/plugins/flot/jquery.flot.min.js"></script>
-    <script src="~/assets/plugins/flot/jquery.flot.resize.min.js"></script>
-    <script src="~/assets/plugins/flot/jquery.flot.categories.min.js"></script>
-    <script src="~/assets/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
-    <script src="~/assets/plugins/jquery.sparkline.min.js"></script>
-    <script src="~/assets/plugins/jqvmap/jqvmap/jquery.vmap.js"></script>
-    <script src="~/assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js"></script>
-    <script src="~/assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js"></script>
-    <script src="~/assets/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js"></script>
     <!-- Validation form -->
     <script src="~/assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
     <script src="~/assets/plugins/jquery-validation/js/additional-methods.min.js"></script>
@@ -612,37 +590,16 @@
     <script src="~/assets/plugins/bootstrap-confirmation/bootstrap-confirmation.min.js"></script>
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
-    <script src="~/assets/scripts/app/app.min.js"></script>
+    <script src="~/assets/scripts/app/app.js"></script>
     <!-- END THEME GLOBAL SCRIPTS -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="~/assets/scripts/pages/dashboard.min.js"></script>
-    <!-- Datatables-->
-    <script src="~/assets/plugins/datatables/datatable.js"></script>
-    <script src="~/assets/plugins/datatables/datatables.min.js"></script>
-    <script src="~/assets/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"></script>
-    <script src="~/assets/plugins/datatables/table-datatables-buttons.js"></script>
-    @*New For create employee*@
-    <script src="~/assets/scripts/pages/form-validation.js"></script>
-    <script src="~/assets/scripts/pages/components-date-time-pickers.min.js"></script>
-    <script src="~/assets/scripts/pages/form-icheck.min.js"></script>
-    <script src="~/assets/scripts/pages/ui-confirmations.min.js"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->
-    <!-- BEGIN THEME LAYOUT SCRIPTS -->
-    <script src="~/assets/scripts/layout/layout.min.js"></script>
-    <script src="~/assets/scripts/layout/demo.min.js"></script>
-    <script src="~/assets/scripts/global/quick-sidebar.min.js"></script>
-    <script src="~/assets/scripts/global/quick-nav.min.js"></script>
-    <!-- END THEME LAYOUT SCRIPTS -->
-    <script>
-        $(document).ready(function () {
-            $('#clickmewow').click(function () {
-                $('#radio1003').attr('checked', 'checked');
-            });
-        })
-    </script>
+    @*<script src="~/assets/scripts/pages/dashboard.min.js"></script>*@
 
-    @*@Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)*@
+
+    @*New For create employee*@
+    
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

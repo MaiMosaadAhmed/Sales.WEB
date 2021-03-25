@@ -626,6 +626,7 @@
     <Content Include="assets\img\ajax-loading.gif" />
     <Content Include="assets\img\ajax-modal-loading.gif" />
     <Content Include="assets\img\aligntech.png" />
+    <Content Include="assets\img\menu-toggler.png" />
     <Content Include="assets\plugins\amcharts\amcharts\amcharts.js" />
     <Content Include="assets\plugins\amcharts\amcharts\funnel.js" />
     <Content Include="assets\plugins\amcharts\amcharts\gantt.js" />
@@ -4681,6 +4682,7 @@
     <Content Include="assets\scripts\pages\EmployeePage.js" />
     <Content Include="assets\scripts\pages\form-icheck.min.js" />
     <Content Include="assets\scripts\pages\form-validation.js" />
+    <Content Include="assets\scripts\pages\form-validation.min.js" />
     <Content Include="assets\scripts\pages\login-4.js" />
     <Content Include="assets\scripts\pages\login-4.min.js" />
     <Content Include="assets\scripts\pages\login-5.js" />
@@ -5071,6 +5073,7 @@
     <Content Include="Areas\Employee\Views\web.config" />
     <Content Include="Areas\Employee\Views\Employee\Index.cshtml" />
     <Content Include="Areas\Employee\Views\Employee\CreateEmployee.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\EmployeeLocations.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />
     <Content Include="Views\Shared\_ErrorLayout.cshtml" />
