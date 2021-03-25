@@ -440,6 +440,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\MyCustomTagHelper.cs" />
+    <Compile Include="Models\jQueryDataTableParamModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -4677,6 +4678,7 @@
     <Content Include="assets\scripts\pages\common.js" />
     <Content Include="assets\scripts\pages\components-date-time-pickers.min.js" />
     <Content Include="assets\scripts\pages\CreateNewEmployee.js" />
+    <Content Include="assets\scripts\pages\CustomScript.js" />
     <Content Include="assets\scripts\pages\dashboard.js" />
     <Content Include="assets\scripts\pages\dashboard.min.js" />
     <Content Include="assets\scripts\pages\EmployeePage.js" />
@@ -5059,7 +5061,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
