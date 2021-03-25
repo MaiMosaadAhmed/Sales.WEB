@@ -5216,15 +5216,16 @@ li [class*=" icon-"].icon-large {
       background-color: #0362fd;
       transition: all 0.3s; }
 .close {
-  display: inline-block;
-  margin-top: 0px;
-  margin-left: 0px;
-  width: 9px;
-  height: 9px;
-  background-repeat: no-repeat !important;
-  text-indent: -10000px;
-  outline: none;
-  background-image: url("../img/remove-icon-small.png") !important; }
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 9px;
+    height: 9px;
+    background-repeat: no-repeat !important;
+    text-indent: -10000px;
+    outline: none;
+    background-image: url("../img/remove-icon-small.png") !important;
+}
 
 /***
 Customized Bootstrap Dropdowns

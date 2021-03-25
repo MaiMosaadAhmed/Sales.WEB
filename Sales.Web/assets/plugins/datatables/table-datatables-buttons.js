@@ -53,16 +53,16 @@ var TableDatatablesButtons = function () {
             // set the initial value
             "pageLength": 10,
 
-            "columnDefs": [
-                { "width": "10px", "targets": 0 },
-                { "width": "10px", "targets": 1 },
-                { "width": "auto", "targets": 2 },
-                { "width": "auto", "targets": 3 },
-                { "width": "auto", "targets": 4 },
-                { "width": "auto", "targets": 5 },
-                { "width": "auto", "targets": 6 },
-                { "width": "auto", "targets": 7 }
-            ],
+            //"columnDefs": [
+            //    { "width": "10px", "targets": 0 },
+            //    { "width": "10px", "targets": 1 },
+            //    { "width": "auto", "targets": 2 },
+            //    { "width": "auto", "targets": 3 },
+            //    { "width": "auto", "targets": 4 },
+            //    { "width": "auto", "targets": 5 },
+            //    { "width": "auto", "targets": 6 },
+            //    { "width": "auto", "targets": 7 }
+            //],
 
             "dom": "<'row' <'col-md-12'B>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
 

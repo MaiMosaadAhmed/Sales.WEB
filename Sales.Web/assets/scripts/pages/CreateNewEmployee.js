@@ -1,4 +1,9 @@
 ﻿$(document).ready(function () {
+    $('#clickmewow').click(function () {
+        $('#radio1003').attr('checked', 'checked');
+    }); 
+
+    $('[data-toggle="tooltip"]').tooltip();
     console.log("ready");
     $('#salesMan').on('ifChecked', function (e) {
         console.log("sales man clicked");

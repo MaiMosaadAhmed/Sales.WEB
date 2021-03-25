@@ -366,8 +366,8 @@
 
     this.container = params.container;
 
-    this.defaultWidth = mapData.width;
-    this.defaultHeight = mapData.height;
+    //this.defaultWidth = mapData.width;
+    //this.defaultHeight = mapData.height;
 
     this.color = params.color;
     this.selectedColor = params.selectedColor;
@@ -405,23 +405,23 @@
 
     map.countries = [];
 
-    for (var key in mapData.pathes) {
-      var path = this.canvas.createPath({
-        path: mapData.pathes[key].path
-      });
+    //for (var key in mapData.pathes) {
+    //  var path = this.canvas.createPath({
+    //    path: mapData.pathes[key].path
+    //  });
 
-      path.setFill(this.color);
-      path.id = map.getCountryId(key);
-      map.countries[key] = path;
+    //  path.setFill(this.color);
+    //  path.id = map.getCountryId(key);
+    //  map.countries[key] = path;
 
-      if (this.canvas.mode == 'svg') {
-        path.setAttribute('class', 'jvectormap-region');
-      } else {
-        jQuery(path).addClass('jvectormap-region');
-      }
+    //  if (this.canvas.mode == 'svg') {
+    //    path.setAttribute('class', 'jvectormap-region');
+    //  } else {
+    //    jQuery(path).addClass('jvectormap-region');
+    //  }
 
-      jQuery(this.rootGroup).append(path);
-    }
+    //  jQuery(this.rootGroup).append(path);
+    //}
 
     jQuery(params.container).delegate(this.canvas.mode == 'svg' ? 'path' : 'shape', 'mouseover mouseout', function (e) {
       var path = e.target,
@@ -429,41 +429,41 @@
       labelShowEvent = $.Event('labelShow.jqvmap'),
       regionMouseOverEvent = $.Event('regionMouseOver.jqvmap');
 
-      if (e.type == 'mouseover') {
-        jQuery(params.container).trigger(regionMouseOverEvent, [code, mapData.pathes[code].name]);
-        if (!regionMouseOverEvent.isDefaultPrevented()) {
-          map.highlight(code, path);
-        }
-        if (params.showTooltip) {
-          map.label.text(mapData.pathes[code].name);
-          jQuery(params.container).trigger(labelShowEvent, [map.label, code]);
+      //if (e.type == 'mouseover') {
+      //  jQuery(params.container).trigger(regionMouseOverEvent, [code, mapData.pathes[code].name]);
+      //  if (!regionMouseOverEvent.isDefaultPrevented()) {
+      //    map.highlight(code, path);
+      //  }
+      //  if (params.showTooltip) {
+      //    map.label.text(mapData.pathes[code].name);
+      //    jQuery(params.container).trigger(labelShowEvent, [map.label, code]);
 
-          if (!labelShowEvent.isDefaultPrevented()) {
-            map.label.show();
-            map.labelWidth = map.label.width();
-            map.labelHeight = map.label.height();
-          }
-        }
-      } else {
-        map.unhighlight(code, path);
+      //    if (!labelShowEvent.isDefaultPrevented()) {
+      //      map.label.show();
+      //      map.labelWidth = map.label.width();
+      //      map.labelHeight = map.label.height();
+      //    }
+      //  }
+      //} else {
+      //  map.unhighlight(code, path);
 
-        map.label.hide();
-        jQuery(params.container).trigger('regionMouseOut.jqvmap', [code, mapData.pathes[code].name]);
-      }
+      //  map.label.hide();
+        //jQuery(params.container).trigger('regionMouseOut.jqvmap', [code, mapData.pathes[code].name]);
+      //}
     });
 
     jQuery(params.container).delegate(this.canvas.mode == 'svg' ? 'path' : 'shape', 'click', function (e) {
       if (!params.multiSelectRegion) {
-        for (var key in mapData.pathes) {
-          map.countries[key].currentFillColor = map.countries[key].getOriginalFill();
-          map.countries[key].setFill(map.countries[key].getOriginalFill());
-        }
+        //for (var key in mapData.pathes) {
+        //  map.countries[key].currentFillColor = map.countries[key].getOriginalFill();
+        //  map.countries[key].setFill(map.countries[key].getOriginalFill());
+        //}
       }
 
       var path = e.target;
       var code = e.target.id.split('_').pop();
 
-      jQuery(params.container).trigger('regionClick.jqvmap', [code, mapData.pathes[code].name]);
+      //jQuery(params.container).trigger('regionClick.jqvmap', [code, mapData.pathes[code].name]);
 
       if (map.selectedRegions.indexOf(code) !== -1) {
         map.deselect(code, path);
