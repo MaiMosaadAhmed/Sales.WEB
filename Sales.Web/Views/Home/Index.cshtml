@@ -36,3 +36,12 @@
         <!-- END PAGE CONTENT INNER -->
     </div>
 </div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#mainNavbar li.active').removeClass('active');
+            $('#mainNavbar li.home').addClass('active');
+        });
+    </script>    
+}

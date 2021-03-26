@@ -12,6 +12,9 @@
 
     @Styles.Render("~/assets/bootstrap.css")
     @Styles.Render("~/assets/datatable.css")
+    @Styles.Render("~/assets/bootstrap-modal.css")
+    @Styles.Render("~/assets/select.css")
+
 
     <!--New For create employee-->
     <link href="~/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
@@ -248,33 +251,33 @@
                             <!-- BEGIN MEGA MENU -->
                             <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
                             <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
-                            <div class="hor-menu  hor-menu-light">
+                            <div class="hor-menu  hor-menu-light" id="mainNavbar">
                                 <ul class="nav navbar-nav">
 
-                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown active">
-                                        <a href="/Home/Index">
+                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown home">
+                                        <a href="/Home/Index" class="nav-link">
                                             الرئيسية
                                             <span class="arrow"></span>
                                         </a>
                                     </li>
 
-                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown employee-area">
                                         <a href="javascript:;">
                                             إدارة العاملين
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu pull-left">
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="/Employee/Employee/Index" class="nav-link  ">بيانات العاملين</a>
+                                            <li aria-haspopup="true" class="item1">
+                                                <a href="/Employee/Employee/Index" class="nav-link">بيانات العاملين</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="#" class="nav-link  ">الوظائف</a>
+                                            <li aria-haspopup="true" class="item2">
+                                                <a href="#" class="nav-link">الوظائف</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="#" class="nav-link  ">متابعة المندوب الان</a>
+                                            <li aria-haspopup="true" class="item3">
+                                                <a href="/Employee/Employee/EmployeeLocations" class="nav-link">متابعة المندوب الان</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="#" class="nav-link  ">خط سير المندوب</a>
+                                            <li aria-haspopup="true" class="item4">
+                                                <a href="/Employee/Employee/EmployeeLocations" class="nav-link">خط سير المندوب</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -286,22 +289,22 @@
                                         </a>
                                         <ul class="dropdown-menu pull-left">
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="layout_mega_menu_light.html" class="nav-link  ">بيانات العملاء</a>
+                                                <a href="layout_mega_menu_light.html" class="nav-link">بيانات العملاء</a>
                                             </li>
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="layout_top_bar_light.html" class="nav-link  ">فئات العملاء</a>
+                                                <a href="layout_top_bar_light.html" class="nav-link">فئات العملاء</a>
                                             </li>
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="layout_fluid_page.html" class="nav-link  ">انواع العملاء</a>
+                                                <a href="layout_fluid_page.html" class="nav-link">انواع العملاء</a>
                                             </li>
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="layout_top_bar_fixed.html" class="nav-link  ">حركات العملاء</a>
+                                                <a href="layout_top_bar_fixed.html" class="nav-link">حركات العملاء</a>
                                             </li>
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="layout_mega_menu_fixed.html" class="nav-link  ">تسويات العملاء</a>
+                                                <a href="layout_mega_menu_fixed.html" class="nav-link">تسويات العملاء</a>
                                             </li>
                                             <li aria-haspopup="true" class=" ">
-                                                <a href="/Employee/Employee/EmployeeLocations" class="nav-link  ">مواقع العملاء</a>
+                                                <a href="/Employee/Employee/EmployeeLocations" class="nav-link">مواقع العملاء</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -321,16 +324,16 @@
                                                                     <h3 class="bg-primary">المخازن</h3>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">بيانات المخازن</a>
+                                                                    <a href="#" class="nav-link">بيانات المخازن</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">رصيد المخازن</a>
+                                                                    <a href="#" class="nav-link">رصيد المخازن</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">طلبات التحميل</a>
+                                                                    <a href="#" class="nav-link">طلبات التحميل</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">رصيد السيارة الحالي</a>
+                                                                    <a href="#" class="nav-link">رصيد السيارة الحالي</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -340,19 +343,19 @@
                                                                     <h3 class="bg-primary">الاصناف</h3>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">إدارة الاصناف</a>
+                                                                    <a href="#" class="nav-link">إدارة الاصناف</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">مجموعات الأصناف</a>
+                                                                    <a href="#" class="nav-link">مجموعات الأصناف</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">الوحدات</a>
+                                                                    <a href="#" class="nav-link">الوحدات</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">تنسيب الوحدات</a>
+                                                                    <a href="#" class="nav-link">تنسيب الوحدات</a>
                                                                 </li>
-                                                                <li aria-haspopup="true" class=" ">
-                                                                    <a href="layout_top_bar_fixed.html" class="nav-link  ">تسعير الاصناف</a>
+                                                                <li>
+                                                                    <a href="#" class="nav-link  ">تسعير الاصناف</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -368,17 +371,17 @@
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu pull-left">
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_mega_menu_light.html" class="nav-link  ">الخصومات</a>
+                                            <li>
+                                                <a href="#" class="nav-link">الخصومات</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_top_bar_light.html" class="nav-link  ">العروض</a>
+                                            <li>
+                                                <a href="#" class="nav-link  ">العروض</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_mega_menu_fixed.html" class="nav-link  ">المستهدفات</a>
+                                            <li>
+                                                <a href="#" class="nav-link">المستهدفات</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_fluid_page.html" class="nav-link  ">بيع مباشر</a>
+                                            <li>
+                                                <a href="#" class="nav-link">بيع مباشر</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -398,25 +401,25 @@
                                                                     <h3 class="bg-primary">تقارير المندوبين</h3>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">الزيارات</a>
+                                                                    <a href="#" class="nav-link">الزيارات</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">الزيارات الفائته</a>
+                                                                    <a href="#" class="nav-link">الزيارات الفائته</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">الزيارات اليومية للمندوب</a>
+                                                                    <a href="#" class="nav-link">الزيارات اليومية للمندوب</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">تقييم اداء المندوبين</a>
+                                                                    <a href="#" class="nav-link">تقييم اداء المندوبين</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">تقييم اداء مندوب</a>
+                                                                    <a href="#" class="nav-link">تقييم اداء مندوب</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">مديونيات المندوبين</a>
+                                                                    <a href="#" class="nav-link">مديونيات المندوبين</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">أوامر التوريد اليومي</a>
+                                                                    <a href="#" class="nav-link">أوامر التوريد اليومي</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -426,13 +429,13 @@
                                                                     <h3 class="bg-primary">تقارير المبيعات</h3>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">الفواتير</a>
+                                                                    <a href="#" class="nav-link">الفواتير</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">المبيعات</a>
+                                                                    <a href="#" class="nav-link">المبيعات</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">مبيعات المندوبين اليومي</a>
+                                                                    <a href="#" class="nav-link">مبيعات المندوبين اليومي</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -442,10 +445,10 @@
                                                                     <h3 class="bg-primary">تقارير العملاء</h3>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">العملاء الجدد</a>
+                                                                    <a href="#" class="nav-link">العملاء الجدد</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">تحليل العملاء</a>
+                                                                    <a href="#" class="nav-link">تحليل العملاء</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -455,13 +458,13 @@
                                                                     <h3 class="bg-primary">تقارير الاصناف</h3>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">تحليل الاصناف</a>
+                                                                    <a href="#" class="nav-link">تحليل الاصناف</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">مبيعات الاصناف</a>
+                                                                    <a href="#" class="nav-link">مبيعات الاصناف</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">مستهدفات الاصناف للمندوب</a>
+                                                                    <a href="#" class="nav-link">مستهدفات الاصناف للمندوب</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -576,8 +579,10 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/datatable")
-    <!-- END CORE PLUGINS -->
+    @Scripts.Render("~/bundles/modal")
 
+
+    <!-- END CORE PLUGINS -->
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="~/assets/plugins/moment.min.js"></script>
     <script src="~/assets/plugins/bootstrap-daterangepicker/daterangepicker.min.js"></script>
@@ -591,14 +596,8 @@
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
     <script src="~/assets/scripts/app/app.js"></script>
-    <!-- END THEME GLOBAL SCRIPTS -->
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    @*<script src="~/assets/scripts/pages/dashboard.min.js"></script>*@
-
-
-    @*New For create employee*@
-    
-    <!-- END PAGE LEVEL SCRIPTS -->
+    <!-- Select must come after defining app.js-->
+    @Scripts.Render("~/bundles/select")
 
     @RenderSection("scripts", required: false)
 </body>

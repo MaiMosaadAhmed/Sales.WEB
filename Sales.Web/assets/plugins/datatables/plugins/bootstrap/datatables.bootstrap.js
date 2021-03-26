@@ -1,25 +1,25 @@
 /* Set the defaults for DataTables initialisation */
-//$.extend(true, $.fn.dataTable.defaults, {
-//    "dom": "<'row'<'col-md-6 col-sm-6'l><'col-md-6 col-sm-6'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-5'i><'col-md-7 col-sm-7'p>>", // default layout with horizobtal scrollable datatable
-//    //"dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // datatable layout without  horizobtal scroll(used when bootstrap dropdowns used in the datatable cells)
-//    "language": {
-//        "lengthMenu": " _MENU_ records ",
-//        "paginate": {
-//            "previous": 'Prev',
-//            "next": 'Next',
-//            "page": "Page",
-//            "pageOf": "of"
-//        }
-//    },
-//    "pagingType": "bootstrap_number"
-//});
+$.extend(true, $.fn.dataTable.defaults, {
+    "dom": "<'row'<'col-md-6 col-sm-6'l><'col-md-6 col-sm-6'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-5'i><'col-md-7 col-sm-7'p>>", // default layout with horizobtal scrollable datatable
+    //"dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // datatable layout without  horizobtal scroll(used when bootstrap dropdowns used in the datatable cells)
+    "language": {
+        "lengthMenu": " _MENU_ records ",
+        "paginate": {
+            "previous": 'Prev',
+            "next": 'Next',
+            "page": "Page",
+            "pageOf": "of"
+        }
+    },
+    "pagingType": "bootstrap_number"
+});
 
 /* Default class modification */
-//$.extend($.fn.dataTableExt.oStdClasses, {
-//    "sWrapper": "dataTables_wrapper",
-//    "sFilterInput": "form-control input-sm input-small input-inline",
-//    "sLengthSelect": "form-control input-sm input-xsmall input-inline"
-//});
+$.extend($.fn.dataTableExt.oStdClasses, {
+    "sWrapper": "dataTables_wrapper",
+    "sFilterInput": "form-control input-sm input-small input-inline",
+    "sLengthSelect": "form-control input-sm input-xsmall input-inline"
+});
 
 // In 1.10 we use the pagination renderers to draw the Bootstrap paging,
 // rather than  custom plug-in

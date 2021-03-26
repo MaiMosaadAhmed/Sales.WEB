@@ -22,15 +22,15 @@
         <!-- BEGIN PAGE BREADCRUMBS -->
         <ul class="page-breadcrumb breadcrumb">
             <li>
-                <a href="createEmployee.html">إضافة موظف جديد</a>
+                <a href="/Employee/Employee/CreateEmployee">إضافة موظف جديد</a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li>
+                <a href="/Employee/Employee/Index">بيانات العاملين</a>
                 <i class="fa fa-circle"></i>
             </li>
             <li>
                 <span>إدارة العاملين</span>
-                <i class="fa fa-circle"></i>
-            </li>
-            <li>
-                <span>الرئيسية</span>
             </li>
         </ul>
         <!-- END PAGE BREADCRUMBS -->
@@ -43,14 +43,14 @@
                         <!-- <div class="container"> -->
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="form-group" >
+                                <div class="form-group">
                                     <label class="control-label"></label>
                                     نوع الموظف
                                     <span class="required"> * </span>
-                                    <div class="icheck-inline margin-top-15" >
+                                    <div class="icheck-inline margin-top-15">
                                         <label>
                                             <input type="radio" name="radio2" id="salesMan" class="icheck"
-                                                   data-radio="iradio_square-blue" >
+                                                   data-radio="iradio_square-blue">
                                             مندوب
                                         </label>
                                         <label>
@@ -107,7 +107,7 @@
                                     </label>
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="tel" value="" name="empMobile" class="form-control input-medium" required/>
+                                        <input type="tel" value="" name="empMobile" class="form-control input-medium" required />
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                                     <label class="control-label">العنوان</label>
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="text" value="" name="empAddress" class="form-control input-medium" required/>
+                                        <input type="text" value="" name="empAddress" class="form-control input-medium" required />
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                     <label class="control-label">الرقم القومي</label>
                                     <div class="input-icon right">
                                         <i class="fa"></i>
-                                        <input type="text" value="" name="empNID" class="form-control input-medium" required/>
+                                        <input type="text" value="" name="empNID" class="form-control input-medium" required />
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                                 <div class="form-group">
                                     <label class="control-label">تاريخ الميلاد</label>
                                     <div class="input-icon right">
-                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" required/>
+                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" required />
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
                                 <div class="form-group">
                                     <label class="control-label">تاريخ التعيين</label>
                                     <div class="input-icon right">
-                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" required/>
+                                        <input class="form-control input-medium date-picker" size="16" type="text" value="" required />
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="single" class="control-label">فعال</label>
-                                    <select id="single" class="form-control select2  input-medium" name="isActive">
+                                    <select id="single" class="form-control input-medium" name="isActive">
                                         <option value="job1">فعال</option>
                                         <option value="job2">غير فعال</option>
                                     </select>
@@ -164,8 +164,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="single" class="control-label">الوظيفة</label>
-                                    <select id="single" class="form-control select2  input-medium" name="empJob" required>
-                                        <option></option>
+                                    <select id="single" class="form-control input-medium" required >
                                         <option value="job1">وظيفة 1</option>
                                         <option value="job2">وظيفة 2</option>
                                     </select>
@@ -185,7 +184,7 @@
                                         </label>
                                         <div class="input-icon right">
                                             <i class="fa"></i>
-                                            <input type="number" class="form-control input-medium" min="0"/>
+                                            <input type="number" class="form-control input-medium" min="0" />
                                         </div>
                                     </div>
                                 </div>
@@ -216,7 +215,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label for="single" class="control-label">طريقة البيع</label>
-                                        <select id="single" class="form-control select2 input-medium">
+                                        <select id="single" class="form-control input-medium">
                                             <option>نقدي او أجل</option>
                                             <option value="job1">نقدي فقط</option>
                                             <option value="job2">اجل فقط</option>
@@ -228,7 +227,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label for="single" class="control-label">صلاحيات المندوب</label>
-                                        <select id="single" class="form-control select2  input-medium">
+                                        <select id="single" class="form-control input-medium">
                                             <option value="job1">جميع الصلاحيات</option>
                                             <option value="job2">بيع فقط</option>
                                             <option value="job2">تحصيل فقط</option>
@@ -238,7 +237,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label for="single" class="control-label">وسيلة الدفع</label>
-                                        <select id="single" class="form-control select2 input-medium">
+                                        <select id="single" class="form-control input-medium">
                                             <option>option 1</option>
                                             <option value="job1">option 2</option>
                                             <option value="job2">option 3</option>
@@ -262,7 +261,7 @@
                                         <label for="single" class="control-label">استخدام الموقع</label>
                                         <i class="fa fa-info-circle " data-title="فتح الزيارة للمندوب في نطاق موقع العميل ">
                                         </i>
-                                        <select id="single" class="form-control select2  input-medium">
+                                        <select id="single" class="form-control input-medium">
                                             <option value="job1">نعم</option>
                                             <option value="job2">لا</option>
                                         </select>
@@ -275,8 +274,8 @@
                         <div class="form-actions">
                             <div class="row">
                                 <div class="col" id="formAddEmployeeActions">
-                                    <button type="submit" class="btn blue">إضافة</button>
-                                    <button type="button" class="btn default ">إلغاء</button>
+                                    <button type="submit" class="btn green">إضافة</button>
+                                    <button type="button" class="btn red">إلغاء</button>
                                 </div>
                             </div>
                         </div>
@@ -292,7 +291,7 @@
 @section Scripts{
     <script src="~/assets/scripts/pages/form-validation.min.js"></script>
     <script src="~/assets/scripts/pages/components-date-time-pickers.min.js"></script>
-    <script src="~/assets/scripts/pages/CreateNewEmployee.js"></script>
+    <script src="~/Areas/Employee/scripts/CreateNewEmployee.js"></script>
 }
 
 
