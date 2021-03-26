@@ -445,6 +445,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Employee\scripts\CreateNewEmployee.js" />
+    <Content Include="Areas\Employee\scripts\EmployeeLiveLocation.js" />
     <Content Include="Areas\Employee\scripts\EmployeeLocations.js" />
     <Content Include="Areas\Employee\scripts\index.js" />
     <Content Include="assets\css\app\inbox-rtl.css" />
@@ -5620,7 +5621,7 @@
     <Content Include="Areas\Employee\Views\Employee\CreateEmployee.cshtml" />
     <Content Include="Areas\Employee\Views\Employee\EmployeeLocations.cshtml" />
     <Content Include="Areas\Employee\Views\Employee\EmployeeLiveLocation.cshtml" />
-    <Content Include="Areas\Employee\Views\Employee\EmployeeJops.cshtml" />
+    <Content Include="Areas\Employee\Views\Employee\EmployeeJobs.cshtml" />
     <Content Include="assets\css\img\social\Thumbs.db" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />

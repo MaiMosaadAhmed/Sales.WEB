@@ -19,7 +19,7 @@ namespace Sales.Web.Areas.Employee.Controllers
             return View();
         }
 
-        public ActionResult EmployeeJops()
+        public ActionResult EmployeeJobs()
         {
             return View();
         }
