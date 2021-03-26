@@ -19,11 +19,17 @@ namespace Sales.Web.Areas.Employee.Controllers
             return View();
         }
 
-        public ActionResult EmployeeLocations()
+        public ActionResult EmployeeJops()
         {
             return View();
         }
-        public ActionResult EmployeeJops()
+
+        public ActionResult EmployeeLiveLocation()
+        {
+            return View();
+        }
+
+        public ActionResult EmployeeLocations()
         {
             return View();
         }
