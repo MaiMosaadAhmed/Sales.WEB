@@ -150,3 +150,7 @@ th {
     height: 100%;
     text-align: center;
 }
+
+.button-icon {
+    padding: 0px 5px 0px 5px!important;
+}

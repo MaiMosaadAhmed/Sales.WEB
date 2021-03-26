@@ -9,7 +9,7 @@
     <div class="container-fluid">
         <!-- BEGIN PAGE TITLE -->
         <div class="page-title">
-            <h1>إدارة العاملين</h1>
+            <h1>خط سير المندوب</h1>
         </div>
         <!-- END PAGE TITLE -->
     </div>
@@ -30,66 +30,57 @@
         </ul>
         <!-- END PAGE BREADCRUMBS -->
         <!-- BEGIN PAGE CONTENT INNER -->
-        @*<div class="page-content-inner">*@
-        <div class="portlet light">
-
-            @*<section class="header">*@
+        <div class="page-content-inner">
+            <div class="portlet light">
             <form class="form" role="form">
-                <div class="form-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <div class="input-group select2-bootstrap-prepend">
-                                    <span class="input-group-btn">
-                                        <button class="btn green" type="button" data-select2-open="select-employee">
-                                            إختر
-                                            مندوب
-                                        </button>
-                                    </span>
-                                    <select id="select-employee" class="form-control select2-allow-clear">
-                                        <option></option>
-                                        <optgroup>
-                                            <option>محمود</option>
-                                            <option>علي</option>
-                                            <option>محمد</option>
-                                            <option>احمد</option>
-                                            <option>مي</option>
-                                            <option>يوسف</option>
-                                            <option>طارق</option>
-                                            <option>تامر</option>
-                                            <option>عبده</option>
-                                            <option>معاذ</option>
-                                        </optgroup>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-
-                                <div class="input-group select2-bootstrap-prepend">
-                                    <span class="input-group-btn">
-                                        <button class="btn green" type="button" data-select2-open="select2-single-prepend">
-                                            إختر التاريخ
-                                        </button>
-                                    </span>
-                                    <input class="form-control date-picker" type="text" value="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-md-offset-1">
-                            <div class="form-group">
-                                <button type="submit" class="btn green btn-block">عرض</button>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <div class="input-group select2-bootstrap-prepend">
+                                <span class="input-group-btn">
+                                    <button class="btn green" type="button" data-select2-open="select-employee">
+                                        إختر
+                                        مندوب
+                                    </button>
+                                </span>
+                                <select id="single" class="form-control select2">
+                                    <option>محمود</option>
+                                    <option>علي</option>
+                                    <option>محمد</option>
+                                    <option>احمد</option>
+                                    <option>مي</option>
+                                    <option>يوسف</option>
+                                    <option>طارق</option>
+                                    <option>تامر</option>
+                                    <option>عبده</option>
+                                    <option>معاذ</option>
+                                </select>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
 
+                            <div class="input-group select2-bootstrap-prepend">
+                                <span class="input-group-btn">
+                                    <button class="btn green" type="button" data-select2-open="select2-single-prepend">
+                                        إختر التاريخ
+                                    </button>
+                                </span>
+                                <input class="form-control date-picker" type="text" value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-md-offset-1">
+                        <div class="form-group">
+                            <button type="submit" class="btn green btn-block">عرض</button>
+                        </div>
+                    </div>
+                </div>
             </form>
-            @*</section>*@
             <div id="map" style="height:80vh;"></div>
         </div>
-        @*</div>*@
+        </div>
         <!-- END PAGE CONTENT INNER -->
     </div>
 </div>
