@@ -83,24 +83,27 @@
 <!-- END PAGE CONTENT BODY -->
 <!-- Modals -->
 <div id="addNewClass" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
-    <form class="form">
-        <div class="modal-body">
+    <div class="modal-header">
+        <h4>نوع عميل جديد</h4>
+    </div>
+    <div class="modal-body">
+        <form class="form">
             <div class="form-group">
-                <label class="control-label ">
-                    اسم نوع العميل
-                    <span class="required"> * </span>
-                </label>
-                <div class="input-icon right">
-                    <i class="fa"></i>
+                <div class="input-group select2-bootstrap-prepend">
+                    <span class="input-group-btn">
+                        <button class="btn green" style="min-width:120px" type="button">
+                            اسم نوع العميل
+                        </button>
+                    </span>
                     <input type="text" data-required="1" value="" class="form-control"
-                           name="empName" required />
+                           name="empName" />
                 </div>
             </div>
             <hr />
             <button type="submit" class="btn green">إضافة</button>
             <button type="button" data-dismiss="modal" class="btn red">إلغاء</button>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 
 @section Scripts{

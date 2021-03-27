@@ -128,10 +128,10 @@ body {
     transition: all 1s ease;
 }
 
-#salesManData h3 {
+#salesManData h3,
+.modal-header h4{
     font-family: 'Tajawal', sans-serif !important;
     color: #337ab7;
-    
 }
 
 #salesManData .hide {
@@ -161,6 +161,6 @@ th {
 .custom-card {
     border-radius: 10px !important;
     border: solid #ccc 1px;
-    box-shadow: -5px 5px 15px #ccc !important;
+    box-shadow: -3px 3px 5px #ccc !important;
     padding: 15px 10px !important;
 }
