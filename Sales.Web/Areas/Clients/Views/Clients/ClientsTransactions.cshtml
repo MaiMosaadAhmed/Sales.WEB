@@ -35,91 +35,162 @@
                 <div class="col-md-12">
                     <!-- BEGIN EXAMPLE TABLE PORTLET-->
                     <div class="portlet light ">
-                        <div class="container">
+                        @*<div class="container">
                             <button id="add" type="button" data-target="#addNewCategory" data-toggle="modal"
                                     class="btn green sbold btn-block">
                                 فلتر <i class="icon-equalizer button-icon"></i>
                             </button>
-                        </div>
-                        <div class="container-fluid">
-                            <hr />
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label class="font-blue-dark bold"><i class="fa fa-user font-blue-dark button-icon"></i>إسم العميل : </label>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label class="bold">محمود اسامه</label>
-                                        </div>
+                         </div>*@
+                        <div class="portlet-body">
+                            <div class="tabbable-line">
+                                <ul class="nav nav-tabs ">
+                                    <li class="active">
+                                        <a href="#tab_15_1" class="bold" data-toggle="tab">فلتر <i class="icon-equalizer button-icon bold"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab_15_2" class="bold" data-toggle="tab">نتائج الفلتر <i class="fa fa-check button-icon bold"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab_15_1">
+                                        <form class="form">
+                                            <div class="form-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="input-group select2-bootstrap-prepend">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn green" type="button" data-select2-open="select-employee">
+                                                                        إختر
+                                                                        عميل
+                                                                    </button>
+                                                                </span>
+                                                                <select id="select-employee" class="form-control select2">
+                                                                    <option>محمود</option>
+                                                                    <option>علي</option>
+                                                                    <option>محمد</option>
+                                                                    <option>احمد</option>
+                                                                    <option>مي</option>
+                                                                    <option>يوسف</option>
+                                                                    <option>طارق</option>
+                                                                    <option>تامر</option>
+                                                                    <option>عبده</option>
+                                                                    <option>معاذ</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="input-group select2-bootstrap-prepend">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn green" type="button" data-select2-open="select-date">
+                                                                        تاريخ من
+                                                                    </button>
+                                                                </span>
+                                                                <input id="select-date" class="form-control date-picker" type="text" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="input-group select2-bootstrap-prepend">
+                                                                <span class="input-group-btn">
+                                                                    <button class="btn green" type="button" data-select2-open="select-date">
+                                                                        تاريخ الي
+                                                                    </button>
+                                                                </span>
+                                                                <input id="select-date" class="form-control date-picker" type="text" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <button type="submit" class="btn green btn-block">عرض</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label class="font-blue-dark bold"><i class="fa fa-calendar font-blue-dark button-icon"></i>فترة من :</label>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label class="bold">21/12/2020</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label class="font-blue-dark bold"><i class="fa fa-calendar font-blue-dark button-icon"></i>فترة الي :</label>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label class="bold">21/3/2021</label>
+                                    <div class="tab-pane" id="tab_15_2">
+                                        <div class="custom-card">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <label class="font-blue-dark bold"><i class="fa fa-user font-blue-dark button-icon"></i>إسم العميل : </label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <label class="bold">محمود اسامه</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <label class="font-blue-dark bold"><i class="fa fa-calendar font-blue-dark button-icon"></i>فترة من :</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <label class="bold">21/12/2020</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <label class="font-blue-dark bold"><i class="fa fa-calendar font-blue-dark button-icon"></i>فترة الي :</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <label class="bold">21/3/2021</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <label class="font-blue-dark bold"><i class="fa fa-calendar font-blue-dark button-icon"></i>إجمالي المبيعات :</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <label class="bold">1025456.02</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <label class="font-blue-dark bold"><i class="fa fa-money font-blue-dark button-icon"></i>إجمالي المديونية :</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <label class="bold font-red">1000</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <label class="font-blue-dark bold"><i class="fa fa-money font-blue-dark button-icon"></i>إجمالي الرصيد :</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <label class="bold font-green-meadow">1000</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <br/>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label class="font-blue-dark bold"><i class="fa fa-calendar font-blue-dark button-icon"></i>إجمالي المبيعات :</label>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label class="bold">1025456.02</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label class="font-blue-dark bold"><i class="fa fa-money font-blue-dark button-icon"></i>إجمالي المديونية :</label>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label class="bold font-red">1000</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <label class="font-blue-dark bold"><i class="fa fa-money font-blue-dark button-icon"></i>إجمالي الرصيد :</label>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <label class="bold font-green-meadow">1000</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
                         </div>
+                        <hr/>
                         <div class="portlet-title">
                             <div class="caption font-blue">
                                 <i class="fa fa-dollar font-blue"></i>
                                 <span class="caption-subject bold uppercase">جدول حركات العملاء</span>
-                            </div>
-                            <div>
-                                @*<button id="add" type="button" data-target="#addNewCategory" data-toggle="modal"
-                        class="btn green sbold btn-outline">
-                    فلتر <i class="icon-equalizer button-icon"></i>
-                </button>*@
                             </div>
                         </div>
                         <div class="portlet-body">
@@ -127,21 +198,40 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>فئة العميل</th>
+                                        <th>نوع الحركة</th>
+                                        <th>قيمة الحركة</th>
+                                        <th>المدفوع</th>
+                                        <th>التاريخ</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>جملة</td>
+                                        <td>بيع</td>
+                                        <td>1200</td>
+                                        <td>1000</td>
+                                        <td>20/10/2020</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>تجزئة</td>
+                                        <td>مرتجع</td>
+                                        <td>1200</td>
+                                        <td>1000</td>
+                                        <td>20/10/2020</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>جملة الجملة</td>
+                                        <td>تحصيل</td>
+                                        <td>1200</td>
+                                        <td>1000</td>
+                                        <td>20/10/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>تسوية</td>
+                                        <td>1200</td>
+                                        <td>1000</td>
+                                        <td>20/10/2020</td>
                                     </tr>
                                 </tbody>
                             </table>
