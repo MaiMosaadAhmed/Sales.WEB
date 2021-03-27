@@ -432,6 +432,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Clients\ClientsAreaRegistration.cs" />
+    <Compile Include="Areas\Clients\Controllers\ClientsController.cs" />
     <Compile Include="Areas\Employee\Controllers\EmployeeController.cs" />
     <Compile Include="Areas\Employee\EmployeeAreaRegistration.cs" />
     <Compile Include="Areas\Employee\Models\Employee.cs" />
@@ -444,6 +446,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Clients\Scripts\ClientsCategories.js" />
+    <Content Include="Areas\Clients\Scripts\ClientsClasses.js" />
+    <Content Include="Areas\Clients\Scripts\ClientsLocations.js" />
+    <Content Include="Areas\Clients\Scripts\ClientsSettlements.js" />
+    <Content Include="Areas\Clients\Scripts\ClientsTransactions.js" />
+    <Content Include="Areas\Clients\Scripts\index.js" />
     <Content Include="Areas\Employee\scripts\CreateNewEmployee.js" />
     <Content Include="Areas\Employee\scripts\EmployeeJobs.js" />
     <Content Include="Areas\Employee\scripts\EmployeeLiveLocation.js" />
@@ -5607,6 +5615,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Clients\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -5624,6 +5633,14 @@
     <Content Include="Areas\Employee\Views\Employee\EmployeeLiveLocation.cshtml" />
     <Content Include="Areas\Employee\Views\Employee\EmployeeJobs.cshtml" />
     <Content Include="assets\css\img\social\Thumbs.db" />
+    <Content Include="Areas\Clients\Views\web.config" />
+    <Content Include="Areas\Clients\Views\Clients\Index.cshtml" />
+    <Content Include="Areas\Clients\Views\Clients\CreateNewClient.cshtml" />
+    <Content Include="Areas\Clients\Views\Clients\ClientsCategories.cshtml" />
+    <Content Include="Areas\Clients\Views\Clients\ClientsClasses.cshtml" />
+    <Content Include="Areas\Clients\Views\Clients\ClientsTransactions.cshtml" />
+    <Content Include="Areas\Clients\Views\Clients\ClientsLocations.cshtml" />
+    <Content Include="Areas\Clients\Views\Clients\ClientsSettlements.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />
     <Content Include="Views\Shared\_ErrorLayout.cshtml" />

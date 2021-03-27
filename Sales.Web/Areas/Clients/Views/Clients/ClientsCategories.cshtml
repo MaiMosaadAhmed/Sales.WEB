@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "ClientsCategories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- BEGIN PAGE HEAD-->
+<div class="page-head">
+    <div class="container-fluid">
+        <!-- BEGIN PAGE TITLE -->
+        <div class="page-title">
+            <h1>فئات العملاء</h1>
+        </div>
+        <!-- END PAGE TITLE -->
+    </div>
+</div>
+<!-- END PAGE HEAD-->
+<!-- BEGIN PAGE CONTENT BODY -->
+<div class="page-content">
+    <div class="container-fluid">
+        <!-- BEGIN PAGE BREADCRUMBS -->
+        <ul class="page-breadcrumb breadcrumb">
+            <li>
+                <a href="/Clients/Clients/ClientsCategories">فئات العملاء</a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li>
+                <span>إدارة العملاء</span>
+            </li>
+        </ul>
+        <!-- END PAGE BREADCRUMBS -->
+        <!-- BEGIN PAGE CONTENT INNER -->
+        <div class="page-content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption font-blue">
+                                <i class="fa fa-star font-blue"></i>
+                                <span class="caption-subject bold uppercase">جدول فئات العملاء</span>
+                            </div>
+                            <div class="tools"> </div>
+                            <div>
+                                <button id="add" type="button" data-target="#addNewCategory" data-toggle="modal"
+                                        class="btn green-meadow sbold btn-outline">
+                                    إضافة فئة عميل <i class="glyphicon glyphicon-plus button-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>فئة العميل</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>جملة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>تجزئة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>جملة الجملة</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTENT INNER -->
+    </div>
+</div>
+<!-- END PAGE CONTENT BODY -->
+<!-- Modals -->
+<div id="addNewCategory" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <form class="form">
+        <div class="modal-body">
+            <div class="form-group">
+                <label class="control-label ">
+                    اسم فئة العميل
+                    <span class="required"> * </span>
+                </label>
+                <div class="input-icon right">
+                    <i class="fa"></i>
+                    <input type="text" data-required="1" value="" class="form-control"
+                           name="empName" required />
+                </div>
+            </div>
+            <hr />
+            <button type="submit" class="btn green">إضافة</button>
+            <button type="button" data-dismiss="modal" class="btn red">إلغاء</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="~/Areas/Clients/Scripts/ClientsCategories.js"></script>
+}

@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     $('#mainNavbar li.active').removeClass('active');
     $('#mainNavbar li.employee-area').addClass('active');
-    $('#mainNavbar li.item4').addClass('active');
+    $('#mainNavbar li.employee-area .item4').addClass('active');
 });
 
 initMap();

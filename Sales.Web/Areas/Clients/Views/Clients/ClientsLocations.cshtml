@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "EmployeeLiveLocation";
+    ViewBag.Title = "ClientsLocations";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -9,7 +9,7 @@
     <div class="container-fluid">
         <!-- BEGIN PAGE TITLE -->
         <div class="page-title">
-            <h1>متابعة المندوب الان</h1>
+            <h1>مواقع العملاء</h1>
         </div>
         <!-- END PAGE TITLE -->
     </div>
@@ -21,11 +21,11 @@
         <!-- BEGIN PAGE BREADCRUMBS -->
         <ul class="page-breadcrumb breadcrumb">
             <li>
-                <a href="/Employee/Employee/EmployeeLiveLocation">متابعة المندوب الان</a>
+                <a href="/Clients/Clients/ClientsLocations">مواقع العملاء</a>
                 <i class="fa fa-circle"></i>
             </li>
             <li>
-                <span>إدارة العاملين</span>
+                <span>إدارة العملاء</span>
             </li>
         </ul>
         <!-- END PAGE BREADCRUMBS -->
@@ -36,7 +36,7 @@
                     <span class="input-group-btn">
                         <button class="btn green" type="button" data-select2-open="select-employee">
                             إختر
-                            مندوب
+                            عميل
                         </button>
                     </span>
                     <select id="select-employee" class="form-control select2">
@@ -60,9 +60,7 @@
     </div>
 </div>
 <!-- END PAGE CONTENT BODY -->
-
 @section Scripts{
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7RKx0oCfAUoZQBTkhs5YkKl8kk8RO5Vw&callback=initMap&libraries=&v=weekly" async></script>
-    <script src="~/Areas/Employee/scripts/EmployeeLiveLocation.js"></script>
+    <script src="~/Areas/Clients/Scripts/ClientsLocations.js"></script>
 }
-

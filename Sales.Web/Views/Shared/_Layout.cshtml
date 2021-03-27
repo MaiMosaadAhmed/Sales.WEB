@@ -282,29 +282,29 @@
                                         </ul>
                                     </li>
 
-                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
+                                    <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown clients-area">
                                         <a href="javascript:;">
                                             إدارة العملاء
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="dropdown-menu pull-left">
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_mega_menu_light.html" class="nav-link">بيانات العملاء</a>
+                                            <li aria-haspopup="true" class="item1">
+                                                <a href="/Clients/Clients/Index" class="nav-link">بيانات العملاء</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_top_bar_light.html" class="nav-link">فئات العملاء</a>
+                                            <li aria-haspopup="true" class="item2">
+                                                <a href="/Clients/Clients/ClientsCategories" class="nav-link">فئات العملاء</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_fluid_page.html" class="nav-link">انواع العملاء</a>
+                                            <li aria-haspopup="true" class="item3">
+                                                <a href="/Clients/Clients/ClientsClasses" class="nav-link">انواع العملاء</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_top_bar_fixed.html" class="nav-link">حركات العملاء</a>
+                                            <li aria-haspopup="true" class="item4">
+                                                <a href="/Clients/Clients/ClientsTransactions" class="nav-link">حركات العملاء</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="layout_mega_menu_fixed.html" class="nav-link">تسويات العملاء</a>
+                                            <li aria-haspopup="true" class="item5">
+                                                <a href="/Clients/Clients/ClientsSettlements" class="nav-link">تسويات العملاء</a>
                                             </li>
-                                            <li aria-haspopup="true" class=" ">
-                                                <a href="/Employee/Employee/EmployeeLocations" class="nav-link">مواقع العملاء</a>
+                                            <li aria-haspopup="true" class="item6">
+                                                <a href="/Clients/Clients/ClientsLocations" class="nav-link">مواقع العملاء</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -598,6 +598,7 @@
     <script src="~/assets/scripts/app/app.js"></script>
     <!-- Select must come after defining app.js-->
     @Scripts.Render("~/bundles/select")
+    <script src="~/assets/scripts/layout/layout.min.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>
