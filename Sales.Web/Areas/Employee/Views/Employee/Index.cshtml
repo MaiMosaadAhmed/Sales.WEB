@@ -97,8 +97,11 @@
 @section Scripts{
     <script src="~/Areas/Employee/scripts/index.js"></script>
     <script src="~/assets/scripts/pages/CustomScript.js"></script>
+    
     <script>
-        var DataTableColumns = [
+        var api_url = '@System.Configuration.ConfigurationManager.AppSettings["api_url"]';
+
+            var DataTableColumns = [
 
             { "data": "Name", "searchable": true },
             { "data": "Code", "searchable": true },
@@ -124,7 +127,8 @@
             }
 
         ];
-        $("#EmployeesList").MakeDataTableOuterSearch(DataTableColumns, "http://localhost:64877/api/Employee/Getall", 20, true, true);
+        alert(api_url);
+        $("#EmployeesList").MakeDataTableOuterSearch(DataTableColumns, api_url + "Employee/Getall", 20, true, true);
 
 
 

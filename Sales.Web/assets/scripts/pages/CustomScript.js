@@ -1,4 +1,8 @@
-﻿function dtConvFromJSON(data) {
+﻿var api_url2 = '<%=ConfigurationManager.ConnectionStrings["api_url"] %>';
+
+
+
+function dtConvFromJSON(data) {
     if (data == null) return '';
     var r = /\/Date\(([0-9]+)\)\//gi
   
