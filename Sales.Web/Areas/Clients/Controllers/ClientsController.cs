@@ -11,6 +11,7 @@ namespace Sales.Web.Areas.Clients.Controllers
         // GET: Clients/Clients
         public ActionResult Index()
         {
+
             return View();
         }
 

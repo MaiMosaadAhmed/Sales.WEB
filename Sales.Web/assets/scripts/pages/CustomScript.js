@@ -87,7 +87,6 @@ $.prototype.MakeDataTableOuterSearch = function (parm, url, pageLength, ShowSear
             "type": "POST",
             "url": url,
             "datatype": "application/json; charset=utf-8",
-            //"contentType": 'application/json; charset=utf-8',
             'data': function (data) {
                 console.log(data);
                 return data = JSON.stringify(data);

@@ -50,20 +50,19 @@
                         <div class="portlet-body">
                             <table id="EmployeesList2" class="table table-striped table-bordered table-hover"></table>
 
-                                <table id="EmployeesList" class="table table-striped table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>كود</th>
-                                            <th>إسم</th>
-                                            @*<th>وظيفة</th>
-                        <th>طريقة البيع</th>
-                        <th>صلاحيات</th>
-                        <th>فعال</th>*@
-                                            <th>إعدادات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
+                            <table id="EmployeesList" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>كود</th>
+                                        <th>إسم</th>
+                                        <th>وظيفة</th>
+                                        <th>الموبايل</th>
+                                        <th>فعال</th>
+                                        <th>إعدادات</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
                         </div>
                     </div>
                     <!-- END EXAMPLE TABLE PORTLET-->
@@ -99,7 +98,7 @@
 @section Scripts{
     <script src="~/Areas/Employee/scripts/index.js"></script>
     <script src="~/assets/scripts/pages/CustomScript.js"></script>
-    
+
     <script>
         var api_url = '@System.Configuration.ConfigurationManager.AppSettings["api_url"]';
 
@@ -107,20 +106,19 @@
 
             { "data": "Name", "searchable": true },
             { "data": "Code", "searchable": true },
-            //{ "data": "Job", "searchable": true },
-            //{ "data": "SellingMethod", "searchable": true },
-            //{ "data": "Permision", "searchable": true },
-            //{
-            //    "data": "Active",
-            //    "mRender": function (data, type, full) {
-            //        if (Active) {
-            //            return '<button class="btn green-meadow" data-target="#static" data-toggle="modal">Active</button>';
-            //        }
-            //        return '<button class="btn red" data-target="#static" data-toggle="modal">Active</button>';
-            //    }
-            //},
+            { "data": "Job", "searchable": true },
+            { "data": "Mobile", "searchable": true },
             {
-                "data": "Id",
+                "data": "Active",
+                "mRender": function (data, type, full) {
+                    if (data) {
+                        return '<button class="btn green-meadow" data-target="#static" data-toggle="modal">Active</button>';
+                    }
+                    return '<button class="btn red" data-target="#static" data-toggle="modal">Active</button>';
+                }
+            },
+            {
+                "data": "ID",
                 "mRender": function (data, type, full) {
                     return "" +
                         '<button class="btn btn-info" data-title="تعديل المندوب"><i class="fa fa-pencil"></i></button>' +
@@ -129,31 +127,8 @@
             }
 
         ];
-        $("#EmployeesList").MakeDataTableOuterSearch(DataTableColumns, api_url + "Employee/Getall", 20, true, true);
 
-        //$(document).ready(function () {
-        //    $('#EmployeesList2').on('error.dt', function (e, settings, techNote, message) {
-        //        alert(message);
-        //    }).DataTable({
-        //        dom: 'Blfrtip',
-        //        searching: true,
-        //        processing: true,
-        //        serverSide: true,
-        //        filter: true,
-        //        orderMulti: false,
-        //        lengthMenu: [[100, -1], [100, "All"]],
-        //        buttons: ['copy', 'excel', 'pdf', 'print'],
-        //        ajax: {
-        //            url: api_url + "Employee/Getall",
-        //            type: "POST",
-        //            datatype: "json"
-        //        },
-        //        columns: [
-        //            { data: "ID", name: "ID", title: "ID", width: 60, searchable: true },
-        //            { data: "Name", name: "Name", title: "Name", autoWidth: true, searchable: true },
-        //            { data: "Code", name: "Code", title: "Code", autoWidth: true, searchable: true },
-        //        ]
-        //    });
-        //});
+        $("#EmployeesList").MakeDataTableOuterSearch(DataTableColumns, api_url + "Employee/LoadDataTable?_branchCompany=2", 20, true, true);
+
     </script>
 }
