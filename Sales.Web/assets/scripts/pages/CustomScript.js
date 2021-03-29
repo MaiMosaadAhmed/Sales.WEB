@@ -83,18 +83,18 @@ $.prototype.MakeDataTableOuterSearch = function (parm, url, pageLength, ShowSear
         "bProcessing": true,
         "bServerSide": true,
         //"sAjaxSource": url,
-
         "ajax": {
             "type": "POST",
             "url": url,
-            "contentType": 'application/json; charset=utf-8',
-            'data': function (data) { return data = JSON.stringify(data); }
+            "datatype": "application/json; charset=utf-8",
+            //"contentType": 'application/json; charset=utf-8',
+            'data': function (data) {
+                console.log(data);
+                return data = JSON.stringify(data);
+            }
         },
 
         "columns": parm,
-
-
-
 
         "dom": "<'row' <'col-md-12'B>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
         //"dom": 'Bfrtip',
@@ -108,11 +108,11 @@ $.prototype.MakeDataTableOuterSearch = function (parm, url, pageLength, ShowSear
 
     var table = this.DataTable();
 
-    $('#EmployeesList tbody').on('click', 'tr', function () {
-        var data = table.row($(this)).data();
-        window.open('/HumanResource/Employees/Main#' + data["Id"], '_blank');
+    //$('#EmployeesList tbody').on('click', 'tr', function () {
+    //    var data = table.row($(this)).data();
+    //    window.open('/HumanResource/Employees/Main#' + data["Id"], '_blank');
 
-    });
+    //});
 
     table.columns().every(function () {
         var that = this;
